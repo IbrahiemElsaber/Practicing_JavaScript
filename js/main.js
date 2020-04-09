@@ -55,3 +55,8 @@
 //         ageMessage.innerHTML = err; 
 //     }
 // });
+//Getting the full date of this day
+// var date = new Date();
+// document.getElementById("showDateBtn").addEventListener("click",() =>{
+//     document.getElementById("dateDv").innerHTML = `${parseInt(date.getDay())}/${date.getMonth()+1}/${date.getFullYear()}`;
+// });
