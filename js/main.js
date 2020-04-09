@@ -60,3 +60,20 @@
 // document.getElementById("showDateBtn").addEventListener("click",() =>{
 //     document.getElementById("dateDv").innerHTML = `${parseInt(date.getDay())}/${date.getMonth()+1}/${date.getFullYear()}`;
 // });
+
+// funtion to practice appendchild
+function handle(e) {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        var myBody = document.getElementsByTagName("BODY")[0],
+            value = document.getElementById('txtbox').value,
+            myList = document.createElement('ul'),
+            myLi = document.createElement('li');
+        myLi.id = 'liId';
+        myBody.appendChild(myList);
+        myList.appendChild(myLi);
+        myLi.innerHTML = value;
+        document.getElementById('txtbox').value = "";
+    }
+}
+//end of function
